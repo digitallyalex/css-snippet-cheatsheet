@@ -1,0 +1,73 @@
+/* style variants */
+:root {
+    --main-color: #049B9C;
+    --code-card-background: #E2FDF9;
+    --code-color: white;
+    --general-background: #FFFEED;
+}
+
+/* main style rules */
+
+* {
+    font-family: sans-serif
+}
+
+body {
+    background-color: var(--general-background);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* code card styles */
+.all-cards {
+    display: grid;
+    grid-area: span;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+}
+
+.code-card {
+    color: var(--main-color);
+    background-color: var(--code-card-background);
+    padding: 10px;
+    margin: 2rem;
+    border: 3px dotted var(--main-color);
+}
+
+.code-block {
+    color: var(--code-color);
+    background: linear-gradient(#049B9C, #223762);
+}
+
+.card-title {
+    position: relative;
+    margin-top: -30px;
+    background-color: var(--code-card-background);
+    padding: 5px;
+    border: 3px solid var(--main-color);
+}
+
+
+/* card hover effect */
+.code-card:hover {
+    box-shadow: inset 0px 0px 8px var(--main-color), 0 0 15px var(--main-color);
+}
+
+/* footer styles */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    color: var(--main-color);
+}
